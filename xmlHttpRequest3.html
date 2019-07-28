@@ -39,7 +39,7 @@
 
                 //convertendo a constante estados em array *** ('reduce' transforma array em um único elemento no final como string) 
                 const itens = Array.from(estados).reduce((html, estado) =>
-                    html + `<li>${estado.attributes.nome.value}</li>`, ''
+                    html + `<li>${estado.attributes.nome.value} - ${estado.attributes.sigla.value}</li>`, ''
                 )
                 document.body.insertAdjacentHTML('beforeend', `<ul>${itens}</ul>`)
             },
